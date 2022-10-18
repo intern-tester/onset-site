@@ -5,16 +5,16 @@ $site = new Site();
 
 print $site->bts("Home", '
 <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4">ONSET</h1>
+    <h1 class="display-4">'.getenv('logo').'</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">ONSET it\'s small team. We work on simple codes. We work only for itself. All our projects do not use like professional usage. If you use our code and find some troubles, please contact us by Github. </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
         <a href="'.getenv('git-href').'"><i class="bi bi-github fs-1"></i></a>
       </div>
     </div>
-    <div class="overflow-hidden" style="max-height: 45vh;">
+    <div class="overflow-hidden" style="max-height: '.getenv('max-height').'vh;">
       <div class="container px-5">
-        <img src="https://www.pngitem.com/pimgs/m/491-4913148_web-design-and-development-computer-science-engineering-cartoon.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="860" height="558" loading="lazy">
+        <img src="'.getenv('img').'" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Logo img" width="'.getenv('width').'" height="'.getenv('height').'" loading="lazy">
       </div>
     </div>
   </div>
