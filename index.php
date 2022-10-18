@@ -5,12 +5,12 @@ $site = new Site();
 
 print $site->bts("Home", '
 <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold">ONSET</h1>
+    <h1 class="display-4">ONSET</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <p class="lead mb-4"></p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
         <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Projects</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">About Org.</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#modal-about" >About Us</button>
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 30vh;">
@@ -19,7 +19,7 @@ print $site->bts("Home", '
       </div>
     </div>
   </div>
-');
+' . $sitegenModal("About", "Onset it`s small team. We coding samples for itselfs.", "modal-about") );
 
 class Site {
 
@@ -40,6 +40,27 @@ class Site {
   </body>
 </html>';
   }
+    
+  function genModal($title = "Modal", $content = "", $id = "modal1"){
+      return '
+<div class="modal fade" id="'.$id.'" tabindex="-1" aria-labelledby="'.$title.'" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">'.$title.'</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        '.$content.'
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      ';
+  }  
   
 }
 
