@@ -18,6 +18,11 @@ print $site->bts("Home", '
       </div>
     </div>
   </div>
+  
+  <footer class="py-3 my-4">
+    <p class="text-center text-muted">© '.date('Y').'  '.getenv('logo').'  Company, Inc</p>
+  </footer>
+  
 ' . $site->genModal("About", "Onset it`s small team. We coding samples for itselfs.", "modal-about") );
 
 class Site {
