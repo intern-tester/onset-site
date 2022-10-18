@@ -12,7 +12,7 @@ print $site->bts("Home", '
         <a href="https://github.com/intern-tester"><i class="bi bi-github fs-1"></i></a>
       </div>
     </div>
-    <div class="overflow-hidden" style="max-height: 35vh;">
+    <div class="overflow-hidden" style="max-height: 80vh;">
       <div class="container px-5">
         <img src="https://www.pngitem.com/pimgs/m/491-4913148_web-design-and-development-computer-science-engineering-cartoon.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="860" height="558" loading="lazy">
       </div>
