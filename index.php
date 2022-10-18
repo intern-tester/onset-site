@@ -14,7 +14,7 @@ print $site->bts("Home", '
     </div>
     <div class="overflow-hidden" style="max-height: '.getenv('max-height').'vh;">
       <div class="container px-5">
-        <img src="'.getenv('img').'" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Logo img" width="'.getenv('width').'" height="'.getenv('height').'" loading="lazy">
+        <img src="'.getenv('img').'" class="img-fluid border rounded-3 shadow-lg mb-2" alt="Logo img" width="'.getenv('width').'" height="'.getenv('height').'" loading="lazy">
       </div>
     </div>
   </div>
