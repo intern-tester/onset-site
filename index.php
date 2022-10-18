@@ -19,7 +19,7 @@ print $site->bts("Home", '
       </div>
     </div>
   </div>
-' . $sitegenModal("About", "Onset it`s small team. We coding samples for itselfs.", "modal-about") );
+' . $site->genModal("About", "Onset it`s small team. We coding samples for itselfs.", "modal-about") );
 
 class Site {
 
