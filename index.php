@@ -19,7 +19,7 @@ print $site->bts("Home", '
     </div>
   </div>
   
-  <footer class="py-2 my-4">
+  <footer class="py-1 my-2">
     <p class="text-center text-muted">© '.date('Y').'  '.getenv('logo').'  Company, Inc</p>
   </footer>
   
