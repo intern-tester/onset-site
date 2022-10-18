@@ -9,7 +9,7 @@ print $site->bts("Home", '
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">ONSET it\'s small team. We work on simple codes. We work only for itself. All our projects do not use like professional usage. If you use our code and find some troubles, please contact us by Github. </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <a href="https://github.com/intern-tester"><i class="bi bi-github fs-1"></i></a>
+        <a href="'.getenv('git-href').'"><i class="bi bi-github fs-1"></i></a>
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 45vh;">
