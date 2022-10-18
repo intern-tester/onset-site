@@ -1,7 +1,9 @@
 <?php
 
 
-$site = new Site();
+//$site = new Site();
+
+print 'HELLO';
 
 print $site->bts("Home", "
 <h1>Welcome!</h1>
